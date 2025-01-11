@@ -1,0 +1,24 @@
+package com.udemy;
+
+public class Palindrome
+{
+	public static void main(String[] args) 
+	{
+		String s="madam";
+		char ch[]=s.toCharArray();
+		char rev[]=new char[ch.length];
+		for(int i=0,k=ch.length-1;i<ch.length;i++,k--)
+		{
+			rev[k]=ch[i];
+		}
+		String revstr=new String(rev);
+		if(s.equals(revstr))
+		{
+			System.out.println(s+ " is a Palindrome String");
+		}
+		else
+		{
+			System.out.println(s+ " is not a Palindrome String");
+		}
+	}
+}
